@@ -1,0 +1,45 @@
+Partlist
+
+Exported from megamini-R3.sch at 10/24/2012 10:58:02 PM
+
+EAGLE Version 6.2.0 Copyright (c) 1988-2012 CadSoft
+
+Assembly variant: 
+
+Part     Value           Device               Package       Library    Sheet
+
+C1       100nF           CAP0805              0805          SparkFun   1
+C2       100nF           CAP0805              0805          SparkFun   1
+C3       100nF           CAP0805              0805          SparkFun   1
+C4       100nF           CAP0805              0805          SparkFun   1
+C5       100nF           CAP0805              0805          SparkFun   1
+C6       100nF           CAP0805              0805          SparkFun   1
+C7       100nF           CAP0805              0805          SparkFun   1
+C7*      10uF            CAP0805              0805          SparkFun   1
+C8       100nF           CAP0805              0805          SparkFun   1
+C8*      10uF            CAP0805              0805          SparkFun   1
+D1                       DIODESOD             SOD-323       SparkFun   1
+IC1      NCP1117-5.0     LM317MDT             DPACK         v-reg      1
+IC2      FT232RLSSOP     FT232RLSSOP          SSOP28DB      SparkFun   1
+IC3      ATMEGA2560-16AU ATMEGA1280-16AU      TQFP100       atmel-2005 1
+JP1      M01SMDNS        M01SMDNS             1X01NS        SparkFun   1
+JP2      M01SMDNS        M01SMDNS             1X01NS        SparkFun   1
+JP3      M01SMDNS        M01SMDNS             1X01NS        SparkFun   1
+JP4      M01SMDNS        M01SMDNS             1X01NS        SparkFun   1
+JP5                      M02PTH               1X02          SparkFun   1
+JP6      M01SMDNS        M01SMDNS             1X01NS        SparkFun   1
+LED1                     LED0603              LED-0603      SparkFun   1
+LED2                     LED0603              LED-0603      SparkFun   1
+R1                       RESISTOR0805-RES     0805          SparkFun   1
+R2                       RESISTOR0805-RES     0805          SparkFun   1
+R3                       RESISTOR0805-RES     0805          SparkFun   1
+R4                       RESISTOR0805-RES     0805          SparkFun   1
+R5       10k             RESISTOR0805-RES     0805          SparkFun   1
+SJ1      SOLDERJUMPERNO  SOLDERJUMPERNO       SJ_2S-NO      SparkFun   1
+U$1      M10X2           M10X2                2X10          SparkFun   1
+U$2      M10X2           M10X2                2X10          SparkFun   1
+U$3      M08X2           M08X2                2X8_SMALL     SparkFun   1
+U$4      M08X2           M08X2                2X8_SMALL     SparkFun   1
+U$5      M08X2           M08X2                2X8_SMALL     SparkFun   1
+USB                      MINI-USB-UX60-MB-5ST UX60-MB-5ST   con-hirose 1
+Y1       RESONATORSMD    RESONATORSMD         RESONATOR-SMD SparkFun   1

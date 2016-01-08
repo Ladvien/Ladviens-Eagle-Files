@@ -1,0 +1,74 @@
+Part Numbers:
+=============
+
+Digikey numbers for most of these parts can be found by looking up the appropriate
+part in the microBuilder Footprint Library.  If you don't already have the library
+you can download it free of charge from our website at:
+
+http://www.microbuilder.eu/Projects/EagleFootprintLibrary.aspx
+
+Partlist
+========
+
+Part     Value            Device                    Package         Library      Sheet
+
+B1       RESET            BUTTON_SMT                EVQ-Q2          microbuilder 1
+C1       10µF             CAP_CERAMIC0805           0805            microbuilder 1
+C2       10µF             CAP_CERAMIC0805           0805            microbuilder 1
+C3       10µF             CAP_CERAMIC0805           0805            microbuilder 1
+C4       0.1µF            CAP_CERAMIC0603           0603            microbuilder 1
+C5       0.1µF            CAP_CERAMIC0603           0603            microbuilder 1
+C6       0.1µF            CAP_CERAMIC0603           0603            microbuilder 1
+C7       0.1µF            CAP_CERAMIC0603           0603            microbuilder 1
+C8       0.1µF            CAP_CERAMIC0603           0603            microbuilder 1
+C9       0.1µF            CAP_CERAMIC0603           0603            microbuilder 1
+C10      16pF             CAP_CERAMIC0603           0603            microbuilder 1
+C11      10µF             CAP_TANTALUMA/3216_REFLOW EIA3216-18/A-R  microbuilder 1
+C12      16pF             CAP_CERAMIC0603           0603            microbuilder 1
+C13      47µF             CAP_TANTALUMB/3528_REFLOW EIA3528-21/B-R  microbuilder 1
+C14      10µF             CAP_CERAMIC0805           0805            microbuilder 1
+C15      0.1µF            CAP_CERAMIC0603           0603            microbuilder 1
+C16      0.1µF            CAP_CERAMIC0603           0603            microbuilder 1
+C17      1.0µF            CAP_CERAMIC0603           0603            microbuilder 1
+C18      0.1µF            CAP_CERAMIC0603           0603            microbuilder 1
+C19      0.1µF            CAP_CERAMIC0603           0603            microbuilder 1
+C20      0.1µF            CAP_CERAMIC0603           0603            microbuilder 1
+CN1      JSTPH2           BATTERY                   JSTPH2          microbuilder 1
+D3       ZLLS410TA        DIODESOD-323              SOD-323         microbuilder 1
+JP1      PWRLED           HEADER-1X3ROUND           1X03_ROUND      microbuilder 1
+JP2      STEPUPOUT        HEADER-1X3ROUND           1X03_ROUND      microbuilder 1
+JP3      ISPEN            JUMPER3                   JUMPER3         microbuilder 1
+JP4      UART/ISP         HEADER-1X6ROUND           1X06_ROUND      microbuilder 1
+JP5      SPI1             HEADER-1X6ROUND           1X06_ROUND      microbuilder 1
+JP6      PIO2             HEADER-1X10ROUND          1X10_ROUND      microbuilder 1
+JP7      I2C0             HEADER-1X4ROUND           1X04_ROUND      microbuilder 1
+JP8      ADC              HEADER-1X6ROUND           1X06_ROUND      microbuilder 1
+JP9      SPI0             HEADER-1X6ROUND           1X06_ROUND      microbuilder 1
+JP10     PIO              HEADER-1X10ROUND          1X10_ROUND      microbuilder 1
+JP11     WAKEUP           HEADER-1X1ROUND           1X01_ROUND      microbuilder 1
+JP12     PWRSEL           JUMPER3                   JUMPER3         microbuilder 1
+JTAG1    SWD_1.27MM       JTAG-CORTEXM3             2X05_1.27MM_SMT microbuilder 1
+JTAG2                     JTAG-CORTEXM3MOLEX20      JTAG-ARM        microbuilder 1
+L1       47µH             INDUCTOR                  INDUCTOR_1007   microbuilder 1
+LED      2mA              LED0805                   CHIPLED_0805    microbuilder 1
+LED3     3.3VRED          LED0805                   CHIPLED_0805    microbuilder 1
+R1       10K              RESISTOR0603              0603            microbuilder 1
+R2       10K              RESISTOR0603              0603            microbuilder 1
+R3       10K              RESISTOR0603              0603            microbuilder 1
+R4       10K              RESISTOR0603              0603            microbuilder 1
+R5       10K              RESISTOR0603              0603            microbuilder 1
+R6       10K              RESISTOR0603              0603            microbuilder 1
+R7       10K              RESISTOR0603              0603            microbuilder 1
+R12      10K              RESISTOR0603              0603            microbuilder 1
+R14      750              RESISTOR0603              0603            microbuilder 1
+R15      NC               RESISTOR0603              0603            microbuilder 1
+R17      150              RESISTOR0603              0603            microbuilder 1
+R21      0                RESISTOR0603              0603            microbuilder 1
+TP3      BAT+             TESTPOINT                 TESTPOINT_SMT   microbuilder 1
+TP4      BAT-             TESTPOINT                 TESTPOINT_SMT   microbuilder 1
+U1       LPC1114FBD48/301 LPC1113/4                 LQFP48          microbuilder 1
+U2       ADP121(3.3V)     ADP121                    SOT23-5         microbuilder 1
+U3       MCP130T          MCP130TREFLOW             SOT23-R         microbuilder 1
+U4       NCP1402(5.0V)    NCP1400A_STEPUP           SOT23-5         microbuilder 1
+U5       24AA32AFT-I/OT   MCP24AA32                 SOT23-5         microbuilder 1
+Y1       12MHz            CRYSTALTHIN               CRYSTAL_3.2X2.5 microbuilder 1

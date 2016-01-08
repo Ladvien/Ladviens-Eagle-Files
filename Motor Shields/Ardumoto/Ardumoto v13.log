@@ -1,0 +1,21 @@
+Project Library Creation Log File 2/24/2013 6:47:18 PM
+EAGLE Version 6.2.0 Copyright (c) 1988-2012 CadSoft
+Created from: Ardumoto v13.brd
+
+LIBRARY: Ardumoto_v13.lbr
+   PAC: SparkFun_1X02
+   PAC: SparkFun_1X04
+   PAC: SparkFun_0402-CAP
+   PAC: SparkFun_0402-RES
+   PAC: SparkFun_CREATIVE_COMMONS
+   PAC: SparkFun_DUEMILANOVE_SHIELD_NOLABELS
+   PAC: SparkFun_FIDUCIAL-1X2
+   PAC: SparkFun_LED-0603
+   PAC: SparkFun_NIPPON_F80
+   PAC: SparkFun_POWERSO20
+   PAC: SparkFun_SC70
+   PAC: SparkFun_SCREWTERMINAL-3.5MM-2
+   PAC: SparkFun_SCREWTERMINAL-3.5MM-4
+   PAC: SparkFun_SFE-NEW-WEBLOGO
+   PAC: SparkFun_SJ_3_PASTE1&2
+   PAC: SparkFun_SMA-DIODE
