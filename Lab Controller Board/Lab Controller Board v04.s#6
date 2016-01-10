@@ -28064,6 +28064,7 @@ Source: 008-0260-0_E.pdf</description>
 </parts>
 <sheets>
 <sheet>
+<description>LED Controller</description>
 <plain>
 </plain>
 <instances>
