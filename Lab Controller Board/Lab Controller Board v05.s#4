@@ -27330,7 +27330,6 @@ Source: 008-0260-0_E.pdf</description>
 <part name="R14" library="resistor" deviceset="R-US_" device="R0402" value="10k"/>
 <part name="SUPPLY4" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="GND14" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="R15" library="resistor" deviceset="R-US_" device="R0402" value="330"/>
 <part name="U2" library="usb-serial" deviceset="CH340G" device=""/>
 <part name="J1" library="SparkFun-Connectors" deviceset="USB_MICROB_PLUG" device="CONN-11752"/>
 <part name="GND16" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -27639,7 +27638,6 @@ Source: 008-0260-0_E.pdf</description>
 <instance part="R14" gate="G$1" x="177.8" y="71.12"/>
 <instance part="SUPPLY4" gate="G$1" x="185.42" y="71.12" rot="R270"/>
 <instance part="GND14" gate="1" x="142.24" y="71.12" rot="MR90"/>
-<instance part="R15" gate="G$1" x="223.52" y="-5.08" rot="R180"/>
 <instance part="U2" gate="G$1" x="101.6" y="58.42"/>
 <instance part="J1" gate="G$1" x="73.66" y="40.64"/>
 <instance part="GND16" gate="1" x="73.66" y="22.86" rot="MR0"/>
@@ -27898,9 +27896,12 @@ Source: 008-0260-0_E.pdf</description>
 <net name="13" class="0">
 <segment>
 <pinref part="U1" gate="U$1" pin="PB5(SCK)"/>
-<pinref part="R15" gate="G$1" pin="2"/>
-<wire x1="213.36" y1="-5.08" x2="218.44" y2="-5.08" width="0.1524" layer="91"/>
 <label x="213.36" y="-5.08" size="1.778" layer="95"/>
+<pinref part="LED1" gate="D1" pin="RED-A"/>
+<wire x1="190.5" y1="104.14" x2="228.6" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="104.14" x2="228.6" y2="-5.08" width="0.1524" layer="91"/>
+<label x="213.36" y="104.14" size="1.778" layer="95"/>
+<wire x1="213.36" y1="-5.08" x2="228.6" y2="-5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="D-" class="0">
@@ -27997,12 +27998,14 @@ Source: 008-0260-0_E.pdf</description>
 <segment>
 <wire x1="198.12" y1="109.22" x2="190.5" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="LED1" gate="D1" pin="BLU-A"/>
+<label x="195.58" y="109.22" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$7" class="0">
 <segment>
 <wire x1="200.66" y1="106.68" x2="190.5" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="LED1" gate="D1" pin="GRN-A"/>
+<label x="195.58" y="106.68" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -28052,15 +28055,6 @@ Source: 008-0260-0_E.pdf</description>
 <wire x1="213.36" y1="5.08" x2="223.52" y2="5.08" width="0.1524" layer="91"/>
 <pinref part="U1" gate="U$1" pin="PB1(OC1A)"/>
 <label x="213.36" y="5.08" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="POWER_LED" class="0">
-<segment>
-<pinref part="LED1" gate="D1" pin="RED-A"/>
-<wire x1="190.5" y1="104.14" x2="228.6" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="228.6" y1="104.14" x2="228.6" y2="-5.08" width="0.1524" layer="91"/>
-<pinref part="R15" gate="G$1" pin="1"/>
-<label x="213.36" y="104.14" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A7" class="0">
