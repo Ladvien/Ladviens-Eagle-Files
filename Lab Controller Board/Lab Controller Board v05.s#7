@@ -27785,13 +27785,6 @@ Source: 008-0260-0_E.pdf</description>
 <label x="58.42" y="116.84" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="5V" class="0">
-<segment>
-<wire x1="66.04" y1="45.72" x2="55.88" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="VCC"/>
-<label x="58.42" y="45.72" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="VCC" class="0">
 <segment>
 <pinref part="U1" gate="U$1" pin="VCC@4"/>
@@ -27842,6 +27835,11 @@ Source: 008-0260-0_E.pdf</description>
 <pinref part="U2" gate="G$1" pin="VCC"/>
 <wire x1="91.44" y1="76.2" x2="99.06" y2="76.2" width="0.1524" layer="91"/>
 <label x="96.52" y="76.2" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="66.04" y1="45.72" x2="55.88" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="VCC"/>
+<label x="58.42" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$1" class="0">

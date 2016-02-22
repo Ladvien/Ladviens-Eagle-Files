@@ -27763,6 +27763,7 @@ Source: 008-0260-0_E.pdf</description>
 <wire x1="40.64" y1="30.48" x2="40.64" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="30.48" x2="33.02" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="GND18" gate="1" pin="GND"/>
+<junction x="33.02" y="30.48"/>
 </segment>
 <segment>
 <wire x1="134.62" y1="109.22" x2="134.62" y2="106.68" width="0.1524" layer="91"/>
@@ -27952,20 +27953,6 @@ Source: 008-0260-0_E.pdf</description>
 <wire x1="233.68" y1="30.48" x2="213.36" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$5" class="0">
-<segment>
-<wire x1="198.12" y1="109.22" x2="190.5" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="LED1" gate="D1" pin="BLU-A"/>
-<label x="195.58" y="109.22" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$7" class="0">
-<segment>
-<wire x1="200.66" y1="106.68" x2="190.5" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="LED1" gate="D1" pin="GRN-A"/>
-<label x="195.58" y="106.68" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="SDA" class="0">
 <segment>
 <wire x1="124.46" y1="132.08" x2="137.16" y2="132.08" width="0.1524" layer="91"/>
@@ -28101,16 +28088,24 @@ Source: 008-0260-0_E.pdf</description>
 </net>
 <net name="A1" class="0">
 <segment>
-<wire x1="213.36" y1="50.8" x2="223.52" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="U1" gate="U$1" pin="PC1(ADC1)"/>
 <label x="213.36" y="50.8" size="1.778" layer="95"/>
+<pinref part="LED1" gate="D1" pin="GRN-A"/>
+<label x="195.58" y="106.68" size="1.778" layer="95"/>
+<wire x1="190.5" y1="106.68" x2="233.68" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="106.68" x2="233.68" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="50.8" x2="213.36" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="A2" class="0">
 <segment>
-<wire x1="213.36" y1="48.26" x2="223.52" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="U1" gate="U$1" pin="PC2(ADC2)"/>
 <label x="213.36" y="48.26" size="1.778" layer="95"/>
+<wire x1="213.36" y1="48.26" x2="238.76" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="48.26" x2="238.76" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="109.22" x2="190.5" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="LED1" gate="D1" pin="BLU-A"/>
+<label x="195.58" y="109.22" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A3" class="0">

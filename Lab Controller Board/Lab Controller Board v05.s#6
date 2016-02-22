@@ -27334,8 +27334,6 @@ Source: 008-0260-0_E.pdf</description>
 <part name="J1" library="SparkFun-Connectors" deviceset="USB_MICROB_PLUG" device="CONN-11752"/>
 <part name="GND16" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND17" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="R16" library="resistor" deviceset="R-US_" device="R0402" value="1k"/>
-<part name="R17" library="resistor" deviceset="R-US_" device="R0402" value="1k"/>
 <part name="C6" library="resistor" deviceset="C-US" device="C0402" value="22pF"/>
 <part name="C7" library="resistor" deviceset="C-US" device="C0402" value="22pF"/>
 <part name="GND18" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -27642,8 +27640,6 @@ Source: 008-0260-0_E.pdf</description>
 <instance part="J1" gate="G$1" x="73.66" y="40.64"/>
 <instance part="GND16" gate="1" x="73.66" y="22.86" rot="MR0"/>
 <instance part="GND17" gate="1" x="55.88" y="86.36" rot="MR0"/>
-<instance part="R16" gate="G$1" x="45.72" y="73.66"/>
-<instance part="R17" gate="G$1" x="33.02" y="71.12"/>
 <instance part="C6" gate="G$1" x="25.4" y="40.64"/>
 <instance part="C7" gate="G$1" x="40.64" y="40.64"/>
 <instance part="GND18" gate="1" x="33.02" y="22.86" rot="MR0"/>
@@ -27721,6 +27717,8 @@ Source: 008-0260-0_E.pdf</description>
 <wire x1="147.32" y1="71.12" x2="144.78" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="GND14" gate="1" pin="GND"/>
 <junction x="147.32" y="71.12"/>
+<junction x="152.4" y="73.66"/>
+<junction x="152.4" y="71.12"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="SHIELD"/>
@@ -27830,6 +27828,7 @@ Source: 008-0260-0_E.pdf</description>
 <wire x1="157.48" y1="127" x2="160.02" y2="127" width="0.1524" layer="91"/>
 <label x="162.56" y="139.7" size="1.778" layer="95" rot="R180"/>
 <wire x1="160.02" y1="132.08" x2="160.02" y2="137.16" width="0.1524" layer="91"/>
+<junction x="160.02" y="132.08"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="VCC"/>
@@ -27877,6 +27876,7 @@ Source: 008-0260-0_E.pdf</description>
 <pinref part="C5" gate="G$1" pin="2"/>
 <pinref part="R14" gate="G$1" pin="1"/>
 <junction x="162.56" y="71.12"/>
+<junction x="162.56" y="73.66"/>
 </segment>
 </net>
 <net name="DTR" class="0">
@@ -27930,20 +27930,17 @@ Source: 008-0260-0_E.pdf</description>
 <pinref part="U2" gate="G$1" pin="V3"/>
 </segment>
 </net>
-<net name="U2_RX" class="0">
-<segment>
-<pinref part="U2" gate="G$1" pin="RX"/>
-<wire x1="66.04" y1="71.12" x2="38.1" y2="71.12" width="0.1524" layer="91"/>
-<label x="55.88" y="71.12" size="1.778" layer="95"/>
-<pinref part="R17" gate="G$1" pin="2"/>
-</segment>
-</net>
 <net name="U2_TX" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="TX"/>
-<wire x1="66.04" y1="73.66" x2="50.8" y2="73.66" width="0.1524" layer="91"/>
 <label x="55.88" y="73.66" size="1.778" layer="95"/>
-<pinref part="R16" gate="G$1" pin="2"/>
+<wire x1="66.04" y1="73.66" x2="17.78" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="73.66" x2="17.78" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="-25.4" x2="233.68" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="-25.4" x2="233.68" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="U1" gate="U$1" pin="PD0(RXD)"/>
+<label x="213.36" y="30.48" size="1.778" layer="95"/>
+<wire x1="233.68" y1="30.48" x2="213.36" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -28086,20 +28083,6 @@ Source: 008-0260-0_E.pdf</description>
 <label x="213.36" y="25.4" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="1" class="0">
-<segment>
-<wire x1="213.36" y1="27.94" x2="223.52" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="U1" gate="U$1" pin="PD1(TXD)"/>
-<label x="213.36" y="27.94" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="0" class="0">
-<segment>
-<wire x1="213.36" y1="30.48" x2="223.52" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="U1" gate="U$1" pin="PD0(RXD)"/>
-<label x="213.36" y="30.48" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="A0" class="0">
 <segment>
 <pinref part="U1" gate="U$1" pin="PC0(ADC0)"/>
@@ -28171,6 +28154,19 @@ Source: 008-0260-0_E.pdf</description>
 <wire x1="25.4" y1="45.72" x2="25.4" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="45.72" x2="25.4" y2="45.72" width="0.1524" layer="91"/>
 <junction x="25.4" y="45.72"/>
+</segment>
+</net>
+<net name="U2_RX" class="0">
+<segment>
+<pinref part="U1" gate="U$1" pin="PD1(TXD)"/>
+<label x="213.36" y="27.94" size="1.778" layer="95"/>
+<wire x1="213.36" y1="27.94" x2="236.22" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="27.94" x2="236.22" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="-30.48" x2="15.24" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="-30.48" x2="15.24" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="U2" gate="G$1" pin="RX"/>
+<wire x1="66.04" y1="71.12" x2="15.24" y2="71.12" width="0.1524" layer="91"/>
+<label x="55.88" y="71.12" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

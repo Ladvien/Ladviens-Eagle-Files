@@ -27338,6 +27338,7 @@ Source: 008-0260-0_E.pdf</description>
 <part name="C7" library="resistor" deviceset="C-US" device="C0402" value="22pF"/>
 <part name="GND18" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="Q1" library="crystal" deviceset="CRYSTAL" device="HC49UP"/>
+<part name="C8" library="resistor" deviceset="C-US" device="C0402" value="0.1uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -27624,7 +27625,7 @@ Source: 008-0260-0_E.pdf</description>
 <instance part="GND10" gate="1" x="101.6" y="104.14" rot="MR0"/>
 <instance part="SUPPLY1" gate="G$1" x="137.16" y="60.96"/>
 <instance part="SUPPLY2" gate="G$1" x="101.6" y="121.92"/>
-<instance part="C3" gate="G$1" x="139.7" y="33.02"/>
+<instance part="C3" gate="G$1" x="149.86" y="33.02"/>
 <instance part="GND11" gate="1" x="139.7" y="25.4" rot="MR0"/>
 <instance part="SUPPLY3" gate="G$1" x="127" y="60.96"/>
 <instance part="C4" gate="G$1" x="127" y="58.42"/>
@@ -27653,6 +27654,7 @@ Source: 008-0260-0_E.pdf</description>
 <instance part="R11" gate="G$1" x="154.94" y="109.22" rot="MR180"/>
 <instance part="R12" gate="G$1" x="147.32" y="106.68" rot="MR180"/>
 <instance part="R13" gate="G$1" x="139.7" y="104.14" rot="MR180"/>
+<instance part="C8" gate="G$1" x="137.16" y="40.64"/>
 </instances>
 <busses>
 </busses>
@@ -27695,6 +27697,11 @@ Source: 008-0260-0_E.pdf</description>
 <segment>
 <pinref part="C3" gate="G$1" pin="2"/>
 <pinref part="GND11" gate="1" pin="GND"/>
+<wire x1="149.86" y1="27.94" x2="139.7" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="C8" gate="G$1" pin="2"/>
+<wire x1="137.16" y1="35.56" x2="137.16" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="27.94" x2="139.7" y2="27.94" width="0.1524" layer="91"/>
+<junction x="139.7" y="27.94"/>
 </segment>
 <segment>
 <pinref part="C4" gate="G$1" pin="2"/>
@@ -27798,6 +27805,8 @@ Source: 008-0260-0_E.pdf</description>
 <wire x1="165.1" y1="48.26" x2="137.16" y2="48.26" width="0.1524" layer="91"/>
 <junction x="137.16" y="45.72"/>
 <junction x="137.16" y="48.26"/>
+<pinref part="C8" gate="G$1" pin="1"/>
+<junction x="137.16" y="43.18"/>
 </segment>
 <segment>
 <pinref part="MC7805CD2TR4" gate="G$1" pin="OUT"/>
@@ -27844,8 +27853,8 @@ Source: 008-0260-0_E.pdf</description>
 <net name="N$1" class="0">
 <segment>
 <pinref part="U1" gate="U$1" pin="AREF"/>
-<wire x1="165.1" y1="38.1" x2="139.7" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="38.1" x2="139.7" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="38.1" x2="149.86" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="38.1" x2="149.86" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="C3" gate="G$1" pin="1"/>
 </segment>
 </net>
