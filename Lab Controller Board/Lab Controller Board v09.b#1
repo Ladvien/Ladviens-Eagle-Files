@@ -8,20 +8,20 @@
 </settings>
 <grid distance="3.93700787" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
@@ -44,7 +44,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -80,8 +80,8 @@
 <layer number="115" name="ReferenceISLANDS" color="7" fill="1" visible="no" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="yes"/>
-<layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="yes"/>
-<layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
+<layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="yes"/>
 <layer number="124" name="bTestmark" color="7" fill="1" visible="no" active="yes"/>
 <layer number="125" name="_tNames" color="7" fill="1" visible="no" active="yes"/>
@@ -147,43 +147,49 @@
 <wire x1="50" y1="50" x2="0" y2="50" width="0" layer="20"/>
 <wire x1="0" y1="50" x2="0" y2="0" width="0" layer="20"/>
 <text x="45" y="12" size="2.54" layer="25">+</text>
-<text x="39" y="4.5" size="2.54" layer="122" font="vector" rot="MR180">GND</text>
-<text x="49.1998" y="19.028" size="0.6096" layer="25" font="vector" rot="R90">Lab LED Controller v03
+<text x="39" y="4.5" size="2.54" layer="26" font="vector" rot="MR180">GND</text>
+<text x="49.1998" y="19.028" size="0.6096" layer="25" font="vector" rot="R90">Lab LED Controller v09
 (C) Thomas Brittain</text>
-<text x="48.8232" y="41.2008" size="1" layer="122" font="vector" rot="MR270">Lab LED Controller v05
+<text x="47.8232" y="40.5008" size="1" layer="26" font="vector" rot="MR270">Lab LED Controller v09
 (C) Thomas Brittain</text>
 <dimension x1="0" y1="50" x2="50" y2="50" x3="25" y3="61.0986" textsize="1.778" layer="48"/>
 <dimension x1="0" y1="0" x2="0" y2="50" x3="-6.5144" y3="25" textsize="1.778" layer="48"/>
 <dimension x1="35.8394" y1="20.4724" x2="9.9092" y2="20.4724" x3="22.8743" y3="54.8132" textsize="1.778" layer="23"/>
 <text x="14.6478" y="20.161" size="1" layer="25" font="vector">100k</text>
 <text x="1.4478" y="19.061" size="1" layer="25" font="vector">100k</text>
-<text x="24.9478" y="18.661" size="1" layer="25" font="vector">100k</text>
+<text x="24.9478" y="18.661" size="1" layer="25" font="fixed">100k</text>
 <text x="38.5522" y="23.839" size="1" layer="25" font="vector" rot="R180">100k</text>
 <text x="40.539" y="6.6478" size="1" layer="25" font="vector" rot="R90">16mhz</text>
 <text x="22.3522" y="5.339" size="1" layer="25" font="vector" rot="R180">12mhz</text>
-<text x="7.961" y="2.7522" size="1" layer="25" font="vector" rot="R270">10k</text>
-<text x="10.4478" y="3.061" size="1" layer="25" font="vector">.1uF</text>
-<text x="17.2478" y="5.761" size="1" layer="25" font="vector">22pF</text>
+<text x="13.3478" y="0.561" size="1" layer="25" font="vector">10k</text>
+<text x="10.561" y="5.7522" size="1" layer="25" font="vector" rot="R270">.1uF</text>
+<text x="10.9478" y="5.861" size="1" layer="25" font="vector">22pF</text>
 <text x="26.9478" y="7.261" size="1" layer="25" font="vector">22pF</text>
-<text x="39" y="9" size="2.54" layer="122" font="vector" rot="MR180">12V</text>
-<text x="31.9" y="15.7" size="1" layer="122" font="vector" rot="MR0">10uF</text>
+<text x="39" y="9" size="2.54" layer="26" font="vector" rot="MR180">12V</text>
+<text x="31.9" y="15.7" size="1" layer="26" font="vector" rot="MR0">10uF</text>
 <text x="38.202796875" y="3.523378125" size="1" layer="25" font="vector" rot="R45">.1uF</text>
 <rectangle x1="65.7" y1="26.9" x2="97.7" y2="76.9" layer="49" rot="R90"/>
 <text x="27.823378125" y="17.397203125" size="1" layer="25" font="vector" rot="R315">.1uF</text>
-<text x="22.861" y="43.2522" size="1" layer="122" font="vector" rot="MR270">470uF</text>
-<text x="35.6522" y="39.639" size="1" layer="122" font="vector" rot="MR0">10uF</text>
-<text x="39.461" y="36.9522" size="1" layer="122" font="vector" rot="MR270">10k</text>
-<text x="37.6478" y="30.461" size="1" layer="122" font="vector" rot="MR180">10k</text>
-<text x="29.2478" y="30.661" size="1" layer="122" font="vector" rot="MR180">10k</text>
-<text x="29.4522" y="25.839" size="1" layer="122" font="vector" rot="MR0">10k</text>
-<text x="37.2522" y="24.539" size="1" layer="122" font="vector" rot="MR0">BSS138</text>
-<text x="35.0522" y="32.739" size="1" layer="122" font="vector" rot="MR0">BSS138</text>
-<text x="24.9522" y="26.839" size="1" layer="122" font="vector" rot="MR0">20k</text>
-<text x="19.5522" y="27.339" size="1" layer="122" font="vector" rot="MR0">10k</text>
-<text x="20.6522" y="31.239" size="1" layer="122" font="vector" rot="MR0">370</text>
-<text x="21.361" y="37.8522" size="1" layer="122" font="vector" rot="MR270">220</text>
-<text x="16.139" y="35.1478" size="1" layer="122" font="vector" rot="MR90">1uF</text>
-<text x="13.0522" y="35.839" size="1" layer="122" font="vector" rot="MR0">ESP8266-07</text>
+<text x="22.861" y="43.2522" size="1" layer="26" font="vector" rot="MR270">470uF</text>
+<text x="35.6522" y="39.639" size="1" layer="26" font="vector" rot="MR0">10uF</text>
+<text x="39.461" y="36.9522" size="1" layer="26" font="vector" rot="MR270">10k</text>
+<text x="37.6478" y="30.461" size="1" layer="26" font="vector" rot="MR180">10k</text>
+<text x="29.2478" y="30.661" size="1" layer="26" font="vector" rot="MR180">10k</text>
+<text x="29.4522" y="25.839" size="1" layer="26" font="vector" rot="MR0">10k</text>
+<text x="37.2522" y="24.539" size="1" layer="26" font="vector" rot="MR0">BSS138</text>
+<text x="35.0522" y="32.739" size="1" layer="26" font="vector" rot="MR0">BSS138</text>
+<text x="24.9522" y="26.839" size="1" layer="26" font="vector" rot="MR0">20k</text>
+<text x="19.5522" y="27.339" size="1" layer="26" font="vector" rot="MR0">10k</text>
+<text x="20.6522" y="31.239" size="1" layer="26" font="vector" rot="MR0">370</text>
+<text x="21.361" y="37.8522" size="1" layer="26" font="vector" rot="MR270">220</text>
+<text x="16.139" y="35.1478" size="1" layer="26" font="vector" rot="MR90">1uF</text>
+<text x="13.0522" y="35.839" size="1" layer="26" font="vector" rot="MR0">ESP8266-07</text>
+<text x="15.7522" y="18.039" size="1" layer="26" font="vector" rot="MR0">3.3k</text>
+<text x="17.239" y="21.0478" size="1" layer="26" font="vector" rot="MR90">3.3k</text>
+<text x="15.439" y="23.6478" size="1" layer="25" font="vector" rot="R90">MMBT5088</text>
+<text x="0.361" y="26.9522" size="1" layer="25" font="vector" rot="R270">MMBT5088</text>
+<text x="23.661" y="29.2522" size="1" layer="25" font="vector" rot="R270">MMBT5088</text>
+<text x="42.661" y="30.1522" size="1" layer="25" font="vector" rot="R270">MMBT5088</text>
 </plain>
 <libraries>
 <library name="SparkFun-Connectors">
@@ -13545,19 +13551,19 @@ Source: http://www.cypress.com .. 38-12025_0P_V.pdf</description>
 <element name="STANDOFF2" library="SparkFun-Electromechanical" package="STAND-OFF" value="STAND-OFF" x="9.9092" y="20.4724" smashed="yes" rot="R180"/>
 <element name="JP3" library="SparkFun-Connectors" package="SCREWTERMINAL-5MM-2" value="LED_TWO" x="29" y="47" smashed="yes" rot="MR180">
 <attribute name="STOREFRONT_ID" value="PRT-08432" x="29" y="47" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="VALUE" x="27.73" y="45.73" size="0.4064" layer="122" rot="MR180"/>
+<attribute name="VALUE" x="27.73" y="45.73" size="0.4064" layer="26" rot="MR180"/>
 </element>
 <element name="JP4" library="SparkFun-Connectors" package="SCREWTERMINAL-5MM-2" value="LED_ONE" x="42" y="47" smashed="yes" rot="MR180">
 <attribute name="STOREFRONT_ID" value="PRT-08432" x="42" y="47" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="VALUE" x="40.73" y="45.73" size="0.4064" layer="122" rot="MR180"/>
+<attribute name="VALUE" x="40.73" y="45.73" size="0.4064" layer="26" rot="MR180"/>
 </element>
 <element name="JP2" library="SparkFun-Connectors" package="SCREWTERMINAL-5MM-2" value="LED_THREE" x="17" y="47" smashed="yes" rot="MR180">
 <attribute name="STOREFRONT_ID" value="PRT-08432" x="17" y="47" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="VALUE" x="15.73" y="45.73" size="0.4064" layer="122" rot="MR180"/>
+<attribute name="VALUE" x="15.73" y="45.73" size="0.4064" layer="26" rot="MR180"/>
 </element>
 <element name="JP5" library="SparkFun-Connectors" package="SCREWTERMINAL-5MM-2" value="LED_FOUR" x="4" y="47" smashed="yes" rot="MR180">
 <attribute name="STOREFRONT_ID" value="PRT-08432" x="4" y="47" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="VALUE" x="2.73" y="45.73" size="0.4064" layer="122" rot="MR180"/>
+<attribute name="VALUE" x="2.73" y="45.73" size="0.4064" layer="26" rot="MR180"/>
 </element>
 <element name="C1" library="SparkFun-Passives" package="CAP-PTH-5MM" value="big" x="45" y="16" smashed="yes" rot="R180"/>
 <element name="LED1" library="SparkFun-LED" package="LED-TRICOLOR-5050" value="LED-TRICOLOR-5050NO_IC" x="22.5" y="14.1" smashed="yes" rot="R270"/>
@@ -13595,9 +13601,11 @@ Source: http://www.cypress.com .. 38-12025_0P_V.pdf</description>
 </element>
 <element name="U3" library="SparkFun-PowerIC" package="TO-252" value="+12v" x="23.5" y="9" smashed="yes" rot="MR180">
 <attribute name="PROD_ID" value="VREG-12370" x="23.5" y="9" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="VALUE" x="28.58" y="11.54" size="1.27" layer="122" rot="MR270"/>
+<attribute name="VALUE" x="27.22" y="6.56" size="1.27" layer="26" rot="MR90"/>
 </element>
-<element name="J1" library="SparkFun-Connectors" package="1X03_LOCK" value="DS18B20" x="31.3" y="2.3"/>
+<element name="J1" library="SparkFun-Connectors" package="1X03_LOCK" value="DS18B20" x="31.3" y="2.3" smashed="yes">
+<attribute name="VALUE" x="30.03" y="-0.875" size="1.27" layer="27"/>
+</element>
 <element name="U$1" library="lio" package="ESP-07" value="ESP8266-07" x="4.8" y="32.9" smashed="yes" rot="MR180"/>
 <element name="C9" library="resistor" package="C0805K" value="0.1uF" x="18.5" y="36.6" smashed="yes" rot="MR270"/>
 <element name="R9" library="resistor" package="R0805W" value="10k" x="37.1" y="4.4" smashed="yes" rot="MR180"/>
