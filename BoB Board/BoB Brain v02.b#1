@@ -2501,7 +2501,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="U1" library="SparkFun-DigitalIC" package="TQFP32-08" value="ATMEGA328P_TQFP" x="25.507109375" y="24.45710625" smashed="yes" rot="R135">
 <attribute name="PROD_ID" value="IC-09069" x="25.507109375" y="24.45710625" size="1.778" layer="27" rot="R135" display="off"/>
 </element>
-<element name="C2" library="SparkFun-Capacitors" package="EIA3528" value="10uF" x="30.4076" y="13.6352" smashed="yes" rot="MR0"/>
+<element name="C2" library="SparkFun-Capacitors" package="EIA3528" value="10uF" x="31.6648" y="13.6076" smashed="yes" rot="MR270"/>
 <element name="C3" library="resistor" package="C0402" value="0.1uF" x="19.847690625" y="27.872090625" smashed="yes" rot="R225"/>
 <element name="C4" library="resistor" package="C0805K" value="0.1uF" x="29.3602" y="18.6964" smashed="yes" rot="R225"/>
 <element name="Y1" library="SparkFun-FreqCtrl" package="RESONATOR-SMD" value="16MHZ" x="33.15941875" y="21.944028125" smashed="yes" rot="R90">
@@ -2693,11 +2693,19 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="63.7" y1="9.9525" x2="68.0525" y2="9.9" width="0" layer="19" extent="16-16"/>
 <wire x1="30.06730625" y1="19.40350625" x2="63.7" y2="9.9525" width="0" layer="19" extent="1-16"/>
 <wire x1="19.3559125" y1="29.39561875" x2="23.88599375" y2="28.90664375" width="0" layer="19" extent="1-1"/>
-<wire x1="28.7576" y1="13.6352" x2="30.06730625" y2="19.40350625" width="0" layer="19" extent="1-16"/>
-<wire x1="25.78" y1="13.8" x2="28.7576" y2="13.6352" width="0" layer="19" extent="16-16"/>
+<wire x1="31.6648" y1="11.9576" x2="30.06730625" y2="19.40350625" width="0" layer="19" extent="1-16"/>
+<wire x1="25.78" y1="13.8" x2="31.6648" y2="11.9576" width="0" layer="19" extent="16-16"/>
 <wire x1="9.8392" y1="13.768" x2="25.78" y2="13.8" width="0" layer="19" extent="1-16"/>
 <wire x1="12.3525" y1="1.2" x2="9.225" y2="12.9538" width="0" layer="19" extent="1-1"/>
-<wire x1="36.92" y1="39.8" x2="23.88599375" y2="28.90664375" width="0" layer="19" extent="1-1"/>
+<wire x1="36.92" y1="39.8" x2="36.9" y2="39.8" width="2.1844" layer="1"/>
+<wire x1="36.9" y1="39.8" x2="36.9" y2="35" width="2.1844" layer="1"/>
+<wire x1="36.9" y1="35" x2="46.1" y2="35" width="2.1844" layer="1"/>
+<wire x1="46.1" y1="35" x2="46.1" y2="18.2" width="2.1844" layer="1"/>
+<wire x1="46.1" y1="18.2" x2="41.1" y2="18.2" width="2.1844" layer="1"/>
+<wire x1="41.1" y1="18.2" x2="34.9" y2="12" width="2.1844" layer="1"/>
+<via x="34.9" y="12" extent="1-16" drill="0.6" shape="square"/>
+<wire x1="34.9" y1="12" x2="31.7072" y2="12" width="2.1844" layer="16"/>
+<wire x1="31.7072" y1="12" x2="31.6648" y2="11.9576" width="2.1844" layer="16"/>
 </signal>
 <signal name="N$1">
 <contactref element="U1" pad="20"/>

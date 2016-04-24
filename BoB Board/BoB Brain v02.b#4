@@ -2553,8 +2553,8 @@ Please make sure your boards conform to these design rules.</description>
 <element name="JP2" library="SparkFun-Connectors" package="1X12" value="" x="5.6" y="48.4"/>
 <element name="JP3" library="SparkFun-Connectors" package="1X12" value="" x="5.6" y="45.6"/>
 <element name="JP4" library="SparkFun-Connectors" package="1X12" value="" x="5.6" y="42.8"/>
-<element name="JP5" library="SparkFun-Retired" package="1X03" value="JUMPER-3PTH" x="36.4" y="42.8"/>
-<element name="JP6" library="SparkFun-Retired" package="1X03" value="JUMPER-3PTH" x="36.4" y="48.4"/>
+<element name="JP5" library="SparkFun-Retired" package="1X03" value="JUMPER-3PTH" x="41.5" y="42.8" rot="R180"/>
+<element name="JP6" library="SparkFun-Retired" package="1X03" value="JUMPER-3PTH" x="41.5" y="48.4" rot="R180"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -2626,16 +2626,6 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="70.25" y1="13" x2="72.8" y2="21.425" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="6V">
-<contactref element="JP1" pad="2"/>
-<contactref element="C1" pad="1"/>
-<wire x1="47.55" y1="8.1" x2="46.487" y2="9.4462" width="1.4224" layer="16"/>
-<contactref element="U3" pad="1"/>
-<wire x1="21.22" y1="13.8" x2="21.22" y2="13.78" width="1.27" layer="16"/>
-<wire x1="21.22" y1="13.78" x2="23.5" y2="11.5" width="1.27" layer="16"/>
-<wire x1="23.5" y1="11.5" x2="26.5" y2="11.5" width="1.27" layer="16"/>
-<wire x1="26.5" y1="11.5" x2="28" y2="10" width="1.27" layer="16"/>
-<wire x1="28" y1="10" x2="45.65" y2="10" width="1.27" layer="16"/>
-<wire x1="45.65" y1="10" x2="47.55" y2="8.1" width="1.27" layer="16"/>
 <contactref element="JP3" pad="12"/>
 <contactref element="JP3" pad="9"/>
 <contactref element="JP3" pad="10"/>
@@ -2644,9 +2634,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="31" y1="45.6" x2="28.46" y2="45.6" width="2.286" layer="16"/>
 <wire x1="28.46" y1="45.6" x2="25.92" y2="45.6" width="2.286" layer="16"/>
 <contactref element="JP6" pad="2"/>
-<wire x1="33.54" y1="45.6" x2="38.94" y2="48.4" width="0" layer="19" extent="1-1"/>
-<wire x1="21.22" y1="13.8" x2="25.92" y2="45.6" width="0" layer="19" extent="16-16"/>
-<wire x1="47.5" y1="16" x2="45.65" y2="10" width="0" layer="19" extent="16-16"/>
+<wire x1="33.54" y1="45.6" x2="38.96" y2="48.4" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$6">
 <contactref element="LED1" pad="4"/>
@@ -2706,8 +2694,8 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="25.78" y1="13.8" x2="28.7576" y2="13.6352" width="0" layer="19" extent="16-16"/>
 <wire x1="9.8392" y1="13.768" x2="25.78" y2="13.8" width="0" layer="19" extent="1-16"/>
 <wire x1="12.3525" y1="1.2" x2="9.225" y2="12.9538" width="0" layer="19" extent="1-1"/>
-<wire x1="41.48" y1="42.8" x2="23.88599375" y2="28.90664375" width="0" layer="19" extent="1-1"/>
-<wire x1="41.48" y1="48.4" x2="41.48" y2="42.8" width="0" layer="19" extent="1-1"/>
+<wire x1="36.42" y1="42.8" x2="23.88599375" y2="28.90664375" width="0" layer="19" extent="1-1"/>
+<wire x1="36.42" y1="48.4" x2="36.42" y2="42.8" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$1">
 <contactref element="U1" pad="20"/>
@@ -2950,7 +2938,19 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="RAW">
 <contactref element="JP6" pad="1"/>
 <contactref element="JP5" pad="1"/>
-<wire x1="36.4" y1="42.8" x2="36.4" y2="48.4" width="0" layer="19" extent="1-1"/>
+<contactref element="JP1" pad="2"/>
+<contactref element="C1" pad="1"/>
+<contactref element="U3" pad="1"/>
+<wire x1="47.55" y1="8.1" x2="46.487" y2="9.4462" width="1.4224" layer="16"/>
+<wire x1="21.22" y1="13.8" x2="21.22" y2="13.78" width="1.27" layer="16"/>
+<wire x1="21.22" y1="13.78" x2="23.5" y2="11.5" width="1.27" layer="16"/>
+<wire x1="23.5" y1="11.5" x2="26.5" y2="11.5" width="1.27" layer="16"/>
+<wire x1="26.5" y1="11.5" x2="28" y2="10" width="1.27" layer="16"/>
+<wire x1="28" y1="10" x2="45.65" y2="10" width="1.27" layer="16"/>
+<wire x1="45.65" y1="10" x2="47.55" y2="8.1" width="1.27" layer="16"/>
+<wire x1="41.5" y1="42.8" x2="41.5" y2="48.4" width="0" layer="19" extent="1-1"/>
+<wire x1="47.5" y1="16" x2="41.5" y2="42.8" width="0" layer="19" extent="1-1"/>
+<wire x1="45.65" y1="10" x2="47.5" y2="16" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="PIN_PWR">
 <contactref element="JP3" pad="8"/>
@@ -2962,7 +2962,7 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="JP3" pad="6"/>
 <contactref element="JP3" pad="7"/>
 <contactref element="JP5" pad="2"/>
-<wire x1="23.38" y1="45.6" x2="38.94" y2="42.8" width="0" layer="19" extent="1-1"/>
+<wire x1="23.38" y1="45.6" x2="38.96" y2="42.8" width="0" layer="19" extent="1-1"/>
 <wire x1="20.84" y1="45.6" x2="23.38" y2="45.6" width="0" layer="19" extent="1-1"/>
 <wire x1="18.3" y1="45.6" x2="20.84" y2="45.6" width="0" layer="19" extent="1-1"/>
 <wire x1="15.76" y1="45.6" x2="18.3" y2="45.6" width="0" layer="19" extent="1-1"/>
