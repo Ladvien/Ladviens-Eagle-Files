@@ -1867,6 +1867,12 @@ design rules under a new name.</description>
 <element name="S1" library="SparkFun-Retired" package="TACTILE-SWITCH-SMD" value="RESET" x="-52.07" y="-109.22">
 <attribute name="PROD_ID" value="SWCH-08247" x="-52.07" y="-109.22" size="1.778" layer="27" display="off"/>
 </element>
+<element name="R11" library="resistor" package="R0805" value="10K" x="-54.61" y="-115.57"/>
+<element name="J2" library="SparkFun-Connectors" package="1X02" value="" x="-54.61" y="-123.19"/>
+<element name="Q2" library="SparkFun-DiscreteSemi" package="SOT23-3" value="MMBT2222A" x="-58.42" y="-121.92">
+<attribute name="PROD_ID" value="TRANS-08049" x="-58.42" y="-121.92" size="1.778" layer="27" display="off"/>
+</element>
+<element name="C4" library="resistor" package="C0805" value=".1uF" x="-57.15" y="-128.27"/>
 </elements>
 <signals>
 <signal name="N$3">
@@ -1892,7 +1898,7 @@ design rules under a new name.</description>
 <contactref element="U$3" pad="13"/>
 <wire x1="-15.54" y1="11.27" x2="-13.97" y2="-6.09" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$17">
+<signal name="5V">
 <contactref element="CN1" pad="VBUS"/>
 <contactref element="U2" pad="4"/>
 <contactref element="Q1" pad="1"/>
@@ -1923,6 +1929,8 @@ design rules under a new name.</description>
 <contactref element="U$3" pad="14"/>
 <contactref element="U$1" pad="12"/>
 <contactref element="S1" pad="1"/>
+<contactref element="Q2" pad="2"/>
+<wire x1="-54.864" y1="-107.315" x2="-57.47" y2="-122.92" width="0" layer="19" extent="1-1"/>
 <wire x1="-53.66" y1="-90.17" x2="-54.864" y2="-107.315" width="0" layer="19" extent="1-1"/>
 <wire x1="-53.66" y1="-83.82" x2="-53.66" y2="-90.17" width="0" layer="19" extent="1-1"/>
 <wire x1="-53.66" y1="-77.47" x2="-53.66" y2="-83.82" width="0" layer="19" extent="1-1"/>
@@ -1945,7 +1953,7 @@ design rules under a new name.</description>
 <contactref element="R1" pad="2"/>
 <wire x1="-26.35" y1="-13.9399" x2="-34.61" y2="-20.32" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$22">
+<signal name="V_BAT">
 <contactref element="U2" pad="3"/>
 <contactref element="J1" pad="1"/>
 <contactref element="Q1" pad="3"/>
@@ -1967,6 +1975,8 @@ design rules under a new name.</description>
 <contactref element="3.3V" pad="2"/>
 <contactref element="U$3" pad="1"/>
 <contactref element="U$1" pad="9"/>
+<contactref element="R11" pad="2"/>
+<wire x1="-20.32" y1="-10.7188" x2="-53.66" y2="-115.57" width="0" layer="19" extent="1-1"/>
 <wire x1="-15.24" y1="-11.69" x2="-20.32" y2="-10.7188" width="0" layer="19" extent="1-1"/>
 <wire x1="-1.44" y1="2.27" x2="-15.24" y2="-11.69" width="0" layer="19" extent="1-1"/>
 </signal>
@@ -2025,13 +2035,32 @@ design rules under a new name.</description>
 <contactref element="R9" pad="1"/>
 <contactref element="U$3" pad="4"/>
 <contactref element="S1" pad="3"/>
+<contactref element="R11" pad="1"/>
+<wire x1="-54.864" y1="-111.125" x2="-55.56" y2="-115.57" width="0" layer="19" extent="1-1"/>
 <wire x1="-55.56" y1="-96.52" x2="-54.864" y2="-111.125" width="0" layer="19" extent="1-1"/>
 <wire x1="-11.43" y1="-11.69" x2="-55.56" y2="-96.52" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$2">
 <contactref element="R10" pad="1"/>
+<contactref element="U$3" pad="9"/>
+<wire x1="-8.89" y1="-6.09" x2="-55.56" y2="-102.87" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$5">
 <contactref element="U$3" pad="5"/>
-<wire x1="-10.16" y1="-11.69" x2="-55.56" y2="-102.87" width="0" layer="19" extent="1-1"/>
+<contactref element="Q2" pad="1"/>
+<wire x1="-10.16" y1="-11.69" x2="-59.37" y2="-122.92" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="V_BATT">
+<contactref element="J2" pad="1"/>
+<contactref element="C4" pad="1"/>
+<wire x1="-54.61" y1="-123.19" x2="-58.1" y2="-128.27" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$7">
+<contactref element="J2" pad="2"/>
+<contactref element="Q2" pad="3"/>
+<contactref element="C4" pad="2"/>
+<wire x1="-52.07" y1="-123.19" x2="-56.2" y2="-128.27" width="0" layer="19" extent="1-1"/>
+<wire x1="-58.42" y1="-120.82" x2="-52.07" y2="-123.19" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>

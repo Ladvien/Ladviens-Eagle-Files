@@ -1615,6 +1615,37 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </package>
 </packages>
 </library>
+<library name="SparkFun-Retired">
+<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
+In this library you'll find all manner of retired footprints for resistors, capacitors, board names, ICs, etc., that are no longer used in our catalog.&lt;br&gt;&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt;Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/
+&lt;br&gt;&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="TACTILE-SWITCH-SMD">
+<wire x1="-1.54" y1="-2.54" x2="-2.54" y2="-1.54" width="0.2032" layer="51"/>
+<wire x1="-2.54" y1="-1.24" x2="-2.54" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="-2.54" y1="1.54" x2="-1.54" y2="2.54" width="0.2032" layer="51"/>
+<wire x1="-1.54" y1="2.54" x2="1.54" y2="2.54" width="0.2032" layer="21"/>
+<wire x1="1.54" y1="2.54" x2="2.54" y2="1.54" width="0.2032" layer="51"/>
+<wire x1="2.54" y1="1.24" x2="2.54" y2="-1.24" width="0.2032" layer="21"/>
+<wire x1="2.54" y1="-1.54" x2="1.54" y2="-2.54" width="0.2032" layer="51"/>
+<wire x1="1.54" y1="-2.54" x2="-1.54" y2="-2.54" width="0.2032" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="1.905" y2="0.445" width="0.127" layer="51"/>
+<wire x1="1.905" y1="0.445" x2="2.16" y2="-0.01" width="0.127" layer="51"/>
+<wire x1="1.905" y1="-0.23" x2="1.905" y2="-1.115" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="1.27" width="0.2032" layer="21"/>
+<smd name="1" x="-2.794" y="1.905" dx="0.762" dy="1.524" layer="1" rot="R90"/>
+<smd name="2" x="2.794" y="1.905" dx="0.762" dy="1.524" layer="1" rot="R90"/>
+<smd name="3" x="-2.794" y="-1.905" dx="0.762" dy="1.524" layer="1" rot="R90"/>
+<smd name="4" x="2.794" y="-1.905" dx="0.762" dy="1.524" layer="1" rot="R90"/>
+<text x="-0.889" y="1.778" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-0.889" y="-2.032" size="0.4064" layer="27">&gt;Value</text>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1831,6 +1862,12 @@ design rules under a new name.</description>
 <element name="R6" library="resistor" package="R0805" value="180" x="-54.61" y="-77.47"/>
 <element name="R7" library="resistor" package="R0805" value="110" x="-54.61" y="-83.82"/>
 <element name="R8" library="resistor" package="R0805" value="110" x="-54.61" y="-90.17"/>
+<element name="R9" library="resistor" package="R0805" value="470" x="-54.61" y="-96.52"/>
+<element name="R10" library="resistor" package="R0805" value="470" x="-54.61" y="-102.87"/>
+<element name="S1" library="SparkFun-Retired" package="TACTILE-SWITCH-SMD" value="RESET" x="-52.07" y="-109.22">
+<attribute name="PROD_ID" value="SWCH-08247" x="-52.07" y="-109.22" size="1.778" layer="27" display="off"/>
+</element>
+<element name="R11" library="resistor" package="R0805" value="10K" x="-54.61" y="-115.57"/>
 </elements>
 <signals>
 <signal name="N$3">
@@ -1838,9 +1875,13 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$4">
 <contactref element="U$1" pad="13"/>
+<contactref element="R9" pad="2"/>
+<wire x1="-1.44" y1="8.27" x2="-53.66" y2="-96.52" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$6">
 <contactref element="U$1" pad="11"/>
+<contactref element="R10" pad="2"/>
+<wire x1="-1.44" y1="5.27" x2="-53.66" y2="-102.87" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$13">
 <contactref element="U$1" pad="4"/>
@@ -1882,6 +1923,8 @@ design rules under a new name.</description>
 <contactref element="R8" pad="2"/>
 <contactref element="U$3" pad="14"/>
 <contactref element="U$1" pad="12"/>
+<contactref element="S1" pad="1"/>
+<wire x1="-53.66" y1="-90.17" x2="-54.864" y2="-107.315" width="0" layer="19" extent="1-1"/>
 <wire x1="-53.66" y1="-83.82" x2="-53.66" y2="-90.17" width="0" layer="19" extent="1-1"/>
 <wire x1="-53.66" y1="-77.47" x2="-53.66" y2="-83.82" width="0" layer="19" extent="1-1"/>
 <wire x1="-53.66" y1="-71.12" x2="-53.66" y2="-77.47" width="0" layer="19" extent="1-1"/>
@@ -1925,6 +1968,8 @@ design rules under a new name.</description>
 <contactref element="3.3V" pad="2"/>
 <contactref element="U$3" pad="1"/>
 <contactref element="U$1" pad="9"/>
+<contactref element="R11" pad="2"/>
+<wire x1="-20.32" y1="-10.7188" x2="-53.66" y2="-115.57" width="0" layer="19" extent="1-1"/>
 <wire x1="-15.24" y1="-11.69" x2="-20.32" y2="-10.7188" width="0" layer="19" extent="1-1"/>
 <wire x1="-1.44" y1="2.27" x2="-15.24" y2="-11.69" width="0" layer="19" extent="1-1"/>
 </signal>
@@ -1978,6 +2023,20 @@ design rules under a new name.</description>
 <contactref element="LED2" pad="4"/>
 <contactref element="R8" pad="1"/>
 <wire x1="-50.94" y1="-37.26" x2="-55.56" y2="-90.17" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$1">
+<contactref element="R9" pad="1"/>
+<contactref element="U$3" pad="4"/>
+<contactref element="S1" pad="3"/>
+<contactref element="R11" pad="1"/>
+<wire x1="-54.864" y1="-111.125" x2="-55.56" y2="-115.57" width="0" layer="19" extent="1-1"/>
+<wire x1="-55.56" y1="-96.52" x2="-54.864" y2="-111.125" width="0" layer="19" extent="1-1"/>
+<wire x1="-11.43" y1="-11.69" x2="-55.56" y2="-96.52" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$2">
+<contactref element="R10" pad="1"/>
+<contactref element="U$3" pad="9"/>
+<wire x1="-8.89" y1="-6.09" x2="-55.56" y2="-102.87" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
