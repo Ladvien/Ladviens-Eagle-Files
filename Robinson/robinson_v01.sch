@@ -9154,6 +9154,8 @@ SMT- SWCH-08247</description>
 <part name="R15" library="resistor" deviceset="R-US_" device="R0805" value="390"/>
 <part name="GND15" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="J3" library="SparkFun-Connectors" deviceset="M04" device="PTH"/>
+<part name="C6" library="resistor" deviceset="C-US" device="C0805" value="4.7uF"/>
+<part name="GND16" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9216,6 +9218,8 @@ SMT- SWCH-08247</description>
 <instance part="R15" gate="G$1" x="114.3" y="78.74" rot="R90"/>
 <instance part="GND15" gate="1" x="114.3" y="71.12"/>
 <instance part="J3" gate="G$1" x="99.06" y="48.26" rot="R180"/>
+<instance part="C6" gate="G$1" x="-5.08" y="-17.78"/>
+<instance part="GND16" gate="1" x="-5.08" y="-25.4"/>
 </instances>
 <busses>
 </busses>
@@ -9401,6 +9405,10 @@ SMT- SWCH-08247</description>
 <pinref part="R15" gate="G$1" pin="1"/>
 <pinref part="GND15" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="C6" gate="G$1" pin="2"/>
+<pinref part="GND16" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="N$20" class="0">
 <segment>
@@ -9452,8 +9460,9 @@ SMT- SWCH-08247</description>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="VCC"/>
-<wire x1="-2.54" y1="-15.24" x2="-7.62" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="-15.24" x2="-5.08" y2="-15.24" width="0.1524" layer="91"/>
 <pinref part="SUPPLY2" gate="G$1" pin="VCC"/>
+<wire x1="-5.08" y1="-15.24" x2="-7.62" y2="-15.24" width="0.1524" layer="91"/>
 <wire x1="-7.62" y1="22.86" x2="-7.62" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="-7.62" y1="17.78" x2="-7.62" y2="-15.24" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="9-VCC"/>
@@ -9463,6 +9472,8 @@ SMT- SWCH-08247</description>
 <junction x="-7.62" y="17.78"/>
 <label x="48.26" y="22.86" size="1.778" layer="95"/>
 <label x="-5.08" y="17.78" size="1.778" layer="95"/>
+<pinref part="C6" gate="G$1" pin="1"/>
+<junction x="-5.08" y="-15.24"/>
 </segment>
 <segment>
 <pinref part="R11" gate="G$1" pin="2"/>

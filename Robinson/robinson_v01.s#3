@@ -8440,7 +8440,7 @@ SMT- SWCH-08247</description>
 <part name="R1" library="resistor" deviceset="R-US_" device="R0805"/>
 <part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C1" library="resistor" deviceset="C-US" device="C0805" value="1uF"/>
-<part name="J1" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
+<part name="J1" library="SparkFun-Connectors" deviceset="M02" device="PTH" value="3.7_LIPO"/>
 <part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="Q1" library="SparkFun-DiscreteSemi" deviceset="MOSFET-PCHANNEL" device="" value="DMP1045U"/>
 <part name="SUPPLY1" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
@@ -8470,7 +8470,7 @@ SMT- SWCH-08247</description>
 <part name="GND12" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="R11" library="resistor" deviceset="R-US_" device="R0805" value="10K"/>
 <part name="SUPPLY3" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
-<part name="J2" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
+<part name="J2" library="SparkFun-Connectors" deviceset="M02" device="PTH" value="3.3-4.5 Motor"/>
 <part name="GND13" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY4" library="SparkFun-Aesthetics" deviceset="V_BATT" device=""/>
 <part name="Q2" library="SparkFun-DiscreteSemi" deviceset="TRANSISTOR_NPN" device="MMBT2222A" value="MMBT2222A"/>
