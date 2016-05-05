@@ -2345,6 +2345,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="JP5" library="SparkFun-Retired" package="1X03" value="JUMPER-3PTH" x="42" y="39.8" rot="R180"/>
 <element name="JP6" library="SparkFun-Retired" package="1X03" value="JUMPER-3PTH" x="42" y="45.4" rot="R180"/>
 <element name="U$1" library="HM-11-ladvien" package="HM-11" value="HM-11" x="-24.3" y="-2.1"/>
+<element name="R1" library="resistor" package="R0805W" value="10k" x="-23.6" y="-6.1"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -2396,6 +2397,7 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="JP2" pad="3"/>
 <contactref element="JP2" pad="2"/>
 <contactref element="JP2" pad="1"/>
+<contactref element="U$1" pad="12"/>
 <wire x1="36.8" y1="56.3475" x2="38.5" y2="56.3475" width="0" layer="19" extent="1-1"/>
 <wire x1="35" y1="56.4475" x2="36.8" y2="56.3475" width="0" layer="19" extent="1-1"/>
 <wire x1="34.04" y1="45.4" x2="35" y2="56.4475" width="0" layer="19" extent="1-1"/>
@@ -2424,6 +2426,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="12.2952" y1="4.9682" x2="23.5" y2="6.5" width="0" layer="19" extent="16-16"/>
 <wire x1="7.1242" y1="1.1966" x2="12.2952" y2="4.9682" width="0" layer="19" extent="1-1"/>
 <wire x1="4.2" y1="2.7" x2="7.1242" y2="1.1966" width="0" layer="19" extent="1-1"/>
+<wire x1="-10.5" y1="3.4" x2="1.5362" y2="1.1966" width="0" layer="19" extent="1-1"/>
 <wire x1="47.55" y1="3.1" x2="42.5" y2="16" width="0" layer="19" extent="1-1"/>
 <wire x1="70.25" y1="13" x2="47.55" y2="3.1" width="0" layer="19" extent="16-16"/>
 <wire x1="72.8" y1="21.425" x2="70.25" y2="13" width="0" layer="19" extent="16-16"/>
@@ -2561,12 +2564,13 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="U2_TX">
 <contactref element="U1" pad="30"/>
+<contactref element="Q9" pad="3"/>
+<contactref element="R19" pad="1"/>
+<wire x1="63.7" y1="7.8475" x2="60.7" y2="13.4" width="0" layer="19" extent="16-16"/>
+<wire x1="23.320309375" y1="20.57325" x2="60.7" y2="13.4" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="11">
 <contactref element="U1" pad="15"/>
-</signal>
-<signal name="12">
-<contactref element="U1" pad="16"/>
 </signal>
 <signal name="10">
 <contactref element="U1" pad="14"/>
@@ -2584,19 +2588,12 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="LED1" pad="3"/>
 <wire x1="20.49188125" y1="23.401678125" x2="35.2" y2="65.6" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="ESP-TX">
-<contactref element="U1" pad="10"/>
+<signal name="U2_RX">
 <contactref element="Q1" pad="3"/>
 <contactref element="R20" pad="1"/>
+<contactref element="U1" pad="31"/>
 <wire x1="65.9475" y1="9.9" x2="63.5" y2="12" width="0" layer="19" extent="16-16"/>
-<wire x1="29.956646875" y1="26.07821875" x2="63.5" y2="12" width="0" layer="19" extent="1-16"/>
-</signal>
-<signal name="ESP-RX">
-<contactref element="U1" pad="11"/>
-<contactref element="Q9" pad="3"/>
-<contactref element="R19" pad="1"/>
-<wire x1="63.7" y1="7.8475" x2="60.7" y2="13.4" width="0" layer="19" extent="16-16"/>
-<wire x1="29.3909625" y1="26.643903125" x2="60.7" y2="13.4" width="0" layer="19" extent="1-16"/>
+<wire x1="23.88599375" y1="20.007565625" x2="63.5" y2="12" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="3.35V">
 <contactref element="U4" pad="2"/>
@@ -2606,12 +2603,14 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="Q9" pad="1"/>
 <contactref element="R22" pad="2"/>
 <contactref element="R21" pad="2"/>
+<contactref element="U$1" pad="9"/>
 <wire x1="69.7525" y1="25.1" x2="72.8" y2="28.175" width="0" layer="19" extent="16-16"/>
 <wire x1="67.9" y1="22.6988" x2="69.7525" y2="25.1" width="0" layer="19" extent="16-16"/>
 <wire x1="59.9475" y1="18.4" x2="67.9" y2="22.6988" width="0" layer="19" extent="16-16"/>
 <wire x1="60.8525" y1="16.3" x2="59.9475" y2="18.4" width="0" layer="19" extent="16-16"/>
 <wire x1="62.55" y1="14.1" x2="60.8525" y2="16.3" width="0" layer="19" extent="16-16"/>
 <wire x1="58.6" y1="12.45" x2="62.55" y2="14.1" width="0" layer="19" extent="16-16"/>
+<wire x1="-10.5" y1="-1.1" x2="58.6" y2="12.45" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$14">
 <contactref element="U4" pad="1"/>
@@ -2624,7 +2623,9 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="N$12">
 <contactref element="Q1" pad="2"/>
 <contactref element="R22" pad="1"/>
+<contactref element="U$1" pad="2"/>
 <wire x1="64.45" y1="14.1" x2="62.0525" y2="18.4" width="0" layer="19" extent="16-16"/>
+<wire x1="-24.6" y1="7.9" x2="62.0525" y2="18.4" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$15">
 <contactref element="Q9" pad="2"/>
@@ -2632,6 +2633,8 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="58.6" y1="14.35" x2="58.75" y2="14.35" width="0.254" layer="16"/>
 <wire x1="58.7475" y1="16.3" x2="58.5475" y2="15.8025" width="0.254" layer="16"/>
 <wire x1="58.5475" y1="15.8025" x2="58.6" y2="14.35" width="0.254" layer="16"/>
+<contactref element="U$1" pad="4"/>
+<wire x1="-24.6" y1="4.9" x2="58.6" y2="14.35" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$7">
 <contactref element="JP4" pad="12"/>
@@ -2715,8 +2718,18 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="3.3" y1="42.7" x2="6.1" y2="42.7" width="2.1844" layer="1"/>
 <wire x1="6.1" y1="42.7" x2="6.1" y2="42.6" width="2.1844" layer="1"/>
 </signal>
-<signal name="N$29">
-<contactref element="U1" pad="31"/>
+<signal name="N$3">
+<contactref element="U1" pad="16"/>
+</signal>
+<signal name="RESET">
+<contactref element="U$1" pad="11"/>
+<contactref element="R1" pad="2"/>
+<wire x1="-10.5" y1="1.9" x2="-22.5475" y2="-6.1" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="HM-RESET">
+<contactref element="U1" pad="32"/>
+<contactref element="R1" pad="1"/>
+<wire x1="-24.6525" y1="-6.1" x2="24.45168125" y2="19.441878125" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
