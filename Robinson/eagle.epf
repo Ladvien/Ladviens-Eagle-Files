@@ -373,7 +373,7 @@ UsedLibrary="C:/Users/cthom/Ladviens-Eagle-Files/User-Submitted.lbr"
 
 [Win_1]
 Type="Control Panel"
-Loc="-8 -8 2039 1070"
+Loc="0 0 2047 1078"
 State=1
 Number=0
 
