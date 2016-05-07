@@ -205,6 +205,7 @@ aka, Ladvien</text>
 <text x="13.3302" y="9.762" size="1.016" layer="25" font="vector" rot="R270" align="top-right">V+</text>
 <text x="18.4102" y="9.762" size="1.016" layer="25" font="vector" rot="R270" align="top-right">VCC</text>
 <text x="48.61" y="40.76" size="2.54" layer="25" font="vector" rot="R90">V+</text>
+<text x="49.87" y="40.76" size="2.54" layer="26" font="vector" rot="MR90">GND</text>
 <rectangle x1="26.2255" y1="5.2705" x2="28.7655" y2="5.3975" layer="25"/>
 <rectangle x1="29.9085" y1="5.2705" x2="32.4485" y2="5.3975" layer="25"/>
 <rectangle x1="26.2255" y1="5.3975" x2="28.7655" y2="5.5245" layer="25"/>
@@ -421,8 +422,6 @@ aka, Ladvien</text>
 <rectangle x1="25.4635" y1="15.5575" x2="33.2105" y2="15.6845" layer="25"/>
 <rectangle x1="25.4635" y1="15.6845" x2="33.2105" y2="15.8115" layer="25"/>
 <rectangle x1="25.5905" y1="15.8115" x2="33.0835" y2="15.9385" layer="25"/>
-<text x="49.87" y="40.76" size="2.54" layer="25" font="vector" rot="MR90">GND</text>
-<text x="31.327096875" y="42.18121875" size="1.016" layer="25" font="vector" rot="R180" align="top-right">1K</text>
 </plain>
 <libraries>
 <library name="SparkFun-Connectors">
