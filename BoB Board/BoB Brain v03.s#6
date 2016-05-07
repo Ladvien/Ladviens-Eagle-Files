@@ -14953,7 +14953,6 @@ SMT- SWCH-08247</description>
 <part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND6" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="LED1" library="SparkFun-LED" deviceset="LED-TRICOLOR-5050" device="NO_IC"/>
-<part name="GND8" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="R11" library="resistor" deviceset="R-US_" device="R0805W" value="100k"/>
 <part name="R12" library="resistor" deviceset="R-US_" device="R0805W" value="100k"/>
 <part name="R13" library="resistor" deviceset="R-US_" device="R0805W" value="100k"/>
@@ -15319,7 +15318,6 @@ SMT- SWCH-08247</description>
 <instance part="SUPPLY4" gate="G$1" x="185.42" y="71.12" rot="R270"/>
 <instance part="GND14" gate="1" x="142.24" y="71.12" rot="MR90"/>
 <instance part="LED1" gate="D1" x="175.26" y="106.68"/>
-<instance part="GND8" gate="1" x="134.62" y="96.52" rot="MR0"/>
 <instance part="R11" gate="G$1" x="149.86" y="109.22" rot="MR180"/>
 <instance part="R12" gate="G$1" x="147.32" y="106.68" rot="MR180"/>
 <instance part="R13" gate="G$1" x="139.7" y="104.14" rot="MR180"/>
@@ -15407,19 +15405,6 @@ SMT- SWCH-08247</description>
 <junction x="147.32" y="71.12"/>
 <junction x="152.4" y="73.66"/>
 <junction x="152.4" y="71.12"/>
-</segment>
-<segment>
-<wire x1="134.62" y1="109.22" x2="134.62" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="GND8" gate="1" pin="GND"/>
-<pinref part="R13" gate="G$1" pin="1"/>
-<wire x1="134.62" y1="106.68" x2="134.62" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="104.14" x2="134.62" y2="99.06" width="0.1524" layer="91"/>
-<junction x="134.62" y="104.14"/>
-<pinref part="R11" gate="G$1" pin="1"/>
-<wire x1="134.62" y1="109.22" x2="144.78" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="R12" gate="G$1" pin="1"/>
-<wire x1="134.62" y1="106.68" x2="142.24" y2="106.68" width="0.1524" layer="91"/>
-<junction x="134.62" y="106.68"/>
 </segment>
 <segment>
 <pinref part="GND6" gate="1" pin="GND"/>
@@ -15600,6 +15585,7 @@ SMT- SWCH-08247</description>
 <junction x="99.06" y="177.8"/>
 <pinref part="C11" gate="G$1" pin="+"/>
 <wire x1="109.22" y1="177.8" x2="109.22" y2="175.26" width="0.1524" layer="91"/>
+<label x="119.38" y="177.8" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
 <label x="264.16" y="208.28" size="1.778" layer="95" rot="MR0"/>
@@ -15623,6 +15609,16 @@ SMT- SWCH-08247</description>
 <wire x1="327.66" y1="154.94" x2="330.2" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="330.2" y1="154.94" x2="330.2" y2="144.78" width="0.1524" layer="91"/>
 <label x="330.2" y="144.78" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="LED1" gate="D1" pin="GRN-A"/>
+<wire x1="190.5" y1="106.68" x2="195.58" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="106.68" x2="195.58" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="LED1" gate="D1" pin="BLU-A"/>
+<wire x1="195.58" y1="109.22" x2="190.5" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="109.22" x2="198.12" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="109.22" x2="198.12" y2="119.38" width="0.1524" layer="91"/>
+<label x="198.12" y="119.38" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="N$14" class="0">
@@ -15803,6 +15799,23 @@ SMT- SWCH-08247</description>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="254" y1="93.98" x2="254" y2="134.62" width="0.1524" layer="91"/>
 <label x="320.04" y="134.62" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<wire x1="134.62" y1="109.22" x2="134.62" y2="106.68" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="CONN_LED" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="15-CONN_LED"/>
+<wire x1="327.66" y1="185.42" x2="332.74" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="332.74" y1="185.42" x2="332.74" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="332.74" y1="210.82" x2="220.98" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="210.82" x2="220.98" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="LED1" gate="D1" pin="RED-A"/>
+<wire x1="220.98" y1="104.14" x2="190.5" y2="104.14" width="0.1524" layer="91"/>
+<label x="198.12" y="104.14" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

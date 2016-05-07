@@ -15223,8 +15223,8 @@ SMT- SWCH-08247</description>
 </net>
 <net name="A0" class="0">
 <segment>
-<pinref part="J2" gate="G$1" pin="11"/>
-<wire x1="10.16" y1="-33.02" x2="2.54" y2="-33.02" width="0.1524" layer="91"/>
+<pinref part="J2" gate="G$1" pin="12"/>
+<wire x1="10.16" y1="-30.48" x2="2.54" y2="-30.48" width="0.1524" layer="91"/>
 <label x="2.54" y="-15.24" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -15251,8 +15251,8 @@ SMT- SWCH-08247</description>
 </net>
 <net name="ADC6" class="0">
 <segment>
-<pinref part="J2" gate="G$1" pin="12"/>
-<wire x1="10.16" y1="-30.48" x2="2.54" y2="-30.48" width="0.1524" layer="91"/>
+<pinref part="J2" gate="G$1" pin="11"/>
+<wire x1="10.16" y1="-33.02" x2="2.54" y2="-33.02" width="0.1524" layer="91"/>
 <label x="2.54" y="-30.48" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -15320,7 +15320,7 @@ SMT- SWCH-08247</description>
 <instance part="GND14" gate="1" x="142.24" y="71.12" rot="MR90"/>
 <instance part="LED1" gate="D1" x="175.26" y="106.68"/>
 <instance part="GND8" gate="1" x="134.62" y="96.52" rot="MR0"/>
-<instance part="R11" gate="G$1" x="154.94" y="109.22" rot="MR180"/>
+<instance part="R11" gate="G$1" x="149.86" y="109.22" rot="MR180"/>
 <instance part="R12" gate="G$1" x="147.32" y="106.68" rot="MR180"/>
 <instance part="R13" gate="G$1" x="139.7" y="104.14" rot="MR180"/>
 <instance part="C8" gate="G$1" x="137.16" y="40.64"/>
@@ -15416,7 +15416,7 @@ SMT- SWCH-08247</description>
 <wire x1="134.62" y1="104.14" x2="134.62" y2="99.06" width="0.1524" layer="91"/>
 <junction x="134.62" y="104.14"/>
 <pinref part="R11" gate="G$1" pin="1"/>
-<wire x1="134.62" y1="109.22" x2="149.86" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="109.22" x2="144.78" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="R12" gate="G$1" pin="1"/>
 <wire x1="134.62" y1="106.68" x2="142.24" y2="106.68" width="0.1524" layer="91"/>
 <junction x="134.62" y="106.68"/>
@@ -15498,7 +15498,7 @@ SMT- SWCH-08247</description>
 <junction x="243.84" y="205.74"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="AREF" class="0">
 <segment>
 <pinref part="U1" gate="U$1" pin="AREF"/>
 <wire x1="165.1" y1="38.1" x2="149.86" y2="38.1" width="0.1524" layer="91"/>
@@ -15531,11 +15531,8 @@ SMT- SWCH-08247</description>
 <segment>
 <pinref part="U1" gate="U$1" pin="PB5(SCK)"/>
 <label x="213.36" y="-5.08" size="1.778" layer="95"/>
-<wire x1="231.14" y1="109.22" x2="231.14" y2="-5.08" width="0.1524" layer="91"/>
 <label x="213.36" y="104.14" size="1.778" layer="95"/>
 <wire x1="213.36" y1="-5.08" x2="231.14" y2="-5.08" width="0.1524" layer="91"/>
-<pinref part="LED1" gate="D1" pin="BLU-A"/>
-<wire x1="231.14" y1="109.22" x2="190.5" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="U2_TX" class="0">
@@ -15549,26 +15546,6 @@ SMT- SWCH-08247</description>
 <wire x1="243.84" y1="175.26" x2="248.92" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="243.84" y1="177.8" x2="243.84" y2="175.26" width="0.1524" layer="91"/>
 <junction x="243.84" y="175.26"/>
-</segment>
-</net>
-<net name="N$6" class="0">
-<segment>
-<pinref part="LED1" gate="D1" pin="BLU-C"/>
-<pinref part="R11" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="N$8" class="0">
-<segment>
-<pinref part="R12" gate="G$1" pin="2"/>
-<pinref part="LED1" gate="D1" pin="GRN-C"/>
-<wire x1="152.4" y1="106.68" x2="160.02" y2="106.68" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$9" class="0">
-<segment>
-<pinref part="R13" gate="G$1" pin="2"/>
-<pinref part="LED1" gate="D1" pin="RED-C"/>
-<wire x1="144.78" y1="104.14" x2="160.02" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="9~" class="0">
@@ -15597,28 +15574,6 @@ SMT- SWCH-08247</description>
 <wire x1="213.36" y1="17.78" x2="220.98" y2="17.78" width="0.1524" layer="91"/>
 <pinref part="U1" gate="U$1" pin="PD5(T1)"/>
 <label x="213.36" y="17.78" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="A1" class="0">
-<segment>
-<pinref part="U1" gate="U$1" pin="PC1(ADC1)"/>
-<label x="213.36" y="50.8" size="1.778" layer="95"/>
-<label x="195.58" y="106.68" size="1.778" layer="95"/>
-<wire x1="233.68" y1="104.14" x2="233.68" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="233.68" y1="50.8" x2="213.36" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="LED1" gate="D1" pin="RED-A"/>
-<wire x1="190.5" y1="104.14" x2="233.68" y2="104.14" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="A2" class="0">
-<segment>
-<pinref part="U1" gate="U$1" pin="PC2(ADC2)"/>
-<label x="213.36" y="48.26" size="1.778" layer="95"/>
-<wire x1="213.36" y1="48.26" x2="236.22" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="236.22" y1="48.26" x2="236.22" y2="106.68" width="0.1524" layer="91"/>
-<label x="195.58" y="109.22" size="1.778" layer="95"/>
-<pinref part="LED1" gate="D1" pin="GRN-A"/>
-<wire x1="190.5" y1="106.68" x2="236.22" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="U2_RX" class="0">

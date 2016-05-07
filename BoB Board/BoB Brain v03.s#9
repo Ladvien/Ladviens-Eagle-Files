@@ -15223,8 +15223,8 @@ SMT- SWCH-08247</description>
 </net>
 <net name="A0" class="0">
 <segment>
-<pinref part="J2" gate="G$1" pin="11"/>
-<wire x1="10.16" y1="-33.02" x2="2.54" y2="-33.02" width="0.1524" layer="91"/>
+<pinref part="J2" gate="G$1" pin="12"/>
+<wire x1="10.16" y1="-30.48" x2="2.54" y2="-30.48" width="0.1524" layer="91"/>
 <label x="2.54" y="-15.24" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -15251,8 +15251,8 @@ SMT- SWCH-08247</description>
 </net>
 <net name="ADC6" class="0">
 <segment>
-<pinref part="J2" gate="G$1" pin="12"/>
-<wire x1="10.16" y1="-30.48" x2="2.54" y2="-30.48" width="0.1524" layer="91"/>
+<pinref part="J2" gate="G$1" pin="11"/>
+<wire x1="10.16" y1="-33.02" x2="2.54" y2="-33.02" width="0.1524" layer="91"/>
 <label x="2.54" y="-30.48" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -15498,7 +15498,7 @@ SMT- SWCH-08247</description>
 <junction x="243.84" y="205.74"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="AREF" class="0">
 <segment>
 <pinref part="U1" gate="U$1" pin="AREF"/>
 <wire x1="165.1" y1="38.1" x2="149.86" y2="38.1" width="0.1524" layer="91"/>
@@ -15531,11 +15531,11 @@ SMT- SWCH-08247</description>
 <segment>
 <pinref part="U1" gate="U$1" pin="PB5(SCK)"/>
 <label x="213.36" y="-5.08" size="1.778" layer="95"/>
-<pinref part="LED1" gate="D1" pin="RED-A"/>
-<wire x1="190.5" y1="104.14" x2="231.14" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="231.14" y1="104.14" x2="231.14" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="109.22" x2="231.14" y2="-5.08" width="0.1524" layer="91"/>
 <label x="213.36" y="104.14" size="1.778" layer="95"/>
 <wire x1="213.36" y1="-5.08" x2="231.14" y2="-5.08" width="0.1524" layer="91"/>
+<pinref part="LED1" gate="D1" pin="BLU-A"/>
+<wire x1="231.14" y1="109.22" x2="190.5" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="U2_TX" class="0">
@@ -15603,11 +15603,11 @@ SMT- SWCH-08247</description>
 <segment>
 <pinref part="U1" gate="U$1" pin="PC1(ADC1)"/>
 <label x="213.36" y="50.8" size="1.778" layer="95"/>
-<pinref part="LED1" gate="D1" pin="GRN-A"/>
 <label x="195.58" y="106.68" size="1.778" layer="95"/>
-<wire x1="190.5" y1="106.68" x2="233.68" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="233.68" y1="106.68" x2="233.68" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="104.14" x2="233.68" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="233.68" y1="50.8" x2="213.36" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="LED1" gate="D1" pin="RED-A"/>
+<wire x1="190.5" y1="104.14" x2="233.68" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="A2" class="0">
@@ -15615,10 +15615,10 @@ SMT- SWCH-08247</description>
 <pinref part="U1" gate="U$1" pin="PC2(ADC2)"/>
 <label x="213.36" y="48.26" size="1.778" layer="95"/>
 <wire x1="213.36" y1="48.26" x2="236.22" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="236.22" y1="48.26" x2="236.22" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="236.22" y1="109.22" x2="190.5" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="LED1" gate="D1" pin="BLU-A"/>
+<wire x1="236.22" y1="48.26" x2="236.22" y2="106.68" width="0.1524" layer="91"/>
 <label x="195.58" y="109.22" size="1.778" layer="95"/>
+<pinref part="LED1" gate="D1" pin="GRN-A"/>
+<wire x1="190.5" y1="106.68" x2="236.22" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="U2_RX" class="0">
@@ -15721,15 +15721,6 @@ SMT- SWCH-08247</description>
 </segment>
 </net>
 <net name="RESET" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="11-RESET"/>
-<wire x1="327.66" y1="165.1" x2="342.9" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="342.9" y1="165.1" x2="342.9" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="342.9" y1="134.62" x2="254" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="254" y1="93.98" x2="254" y2="134.62" width="0.1524" layer="91"/>
-<label x="320.04" y="134.62" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="C5" gate="G$1" pin="2"/>
 <pinref part="S1" gate="S" pin="3"/>
@@ -15846,6 +15837,17 @@ SMT- SWCH-08247</description>
 <pinref part="U1" gate="U$1" pin="PB0(ICP)"/>
 <wire x1="213.36" y1="7.62" x2="220.98" y2="7.62" width="0.1524" layer="91"/>
 <label x="213.36" y="7.62" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="U2-RESET" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="11-RESET"/>
+<wire x1="327.66" y1="165.1" x2="342.9" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="342.9" y1="165.1" x2="342.9" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="342.9" y1="134.62" x2="254" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="2"/>
+<wire x1="254" y1="93.98" x2="254" y2="134.62" width="0.1524" layer="91"/>
+<label x="320.04" y="134.62" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
