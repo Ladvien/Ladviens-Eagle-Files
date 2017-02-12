@@ -140,58 +140,6 @@
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
-<library name="Ladvien_Eagle_Parts">
-<packages>
-<package name="XDFN8">
-<wire x1="0" y1="0" x2="0" y2="1.2" width="0.1" layer="21"/>
-<wire x1="0" y1="1.2" x2="1.6" y2="1.2" width="0.1" layer="21"/>
-<wire x1="1.6" y1="1.2" x2="1.6" y2="0" width="0.1" layer="21"/>
-<wire x1="1.6" y1="0" x2="0" y2="0" width="0.1" layer="21"/>
-<smd name="1" x="0.2" y="0.1" dx="0.26" dy="0.55" layer="1" rot="R180"/>
-<smd name="2" x="0.6" y="0.1" dx="0.26" dy="0.55" layer="1"/>
-<smd name="3" x="1" y="0.1" dx="0.26" dy="0.55" layer="1"/>
-<smd name="4" x="1.4" y="0.1" dx="0.26" dy="0.55" layer="1"/>
-<smd name="5" x="0.2" y="1.1025" dx="0.26" dy="0.55" layer="1" rot="R180"/>
-<smd name="6" x="0.6" y="1.1025" dx="0.26" dy="0.55" layer="1"/>
-<smd name="7" x="1" y="1.1025" dx="0.26" dy="0.55" layer="1"/>
-<smd name="8" x="1.4" y="1.1025" dx="0.26" dy="0.55" layer="1"/>
-<smd name="PAD" x="0.8" y="0.6" dx="0.3" dy="1.2" layer="1" rot="R90"/>
-<circle x="0.269615625" y="0.2769" radius="0.126359375" width="0.09" layer="20"/>
-</package>
-</packages>
-<symbols>
-<symbol name="NCP186-AMX330TAG">
-<wire x1="0" y1="0" x2="0" y2="-25.4" width="0.254" layer="94"/>
-<wire x1="0" y1="-25.4" x2="17.78" y2="-25.4" width="0.254" layer="94"/>
-<wire x1="17.78" y1="-25.4" x2="17.78" y2="0" width="0.254" layer="94"/>
-<wire x1="17.78" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<pin name="IN" x="-5.08" y="-2.54" length="middle"/>
-<pin name="OUT" x="22.86" y="-2.54" length="middle" rot="R180"/>
-<pin name="GND" x="-5.08" y="-22.86" length="middle"/>
-<pin name="EN" x="22.86" y="-7.62" length="middle" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="NCP186-AMX330TAG">
-<gates>
-<gate name="G$1" symbol="NCP186-AMX330TAG" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="XDFN8">
-<connects>
-<connect gate="G$1" pin="EN" pad="6"/>
-<connect gate="G$1" pin="GND" pad="5 PAD"/>
-<connect gate="G$1" pin="IN" pad="7 8"/>
-<connect gate="G$1" pin="OUT" pad="1 2 4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="resistor">
 <description>&lt;b&gt;Resistors, Capacitors, Inductors&lt;/b&gt;&lt;p&gt;
 Based on the previous libraries:
@@ -8391,6 +8339,58 @@ Source: www.kingbright.com</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="Ladvien_Eagle_Parts">
+<packages>
+<package name="XDFN8">
+<wire x1="0" y1="0" x2="0" y2="1.2" width="0.1" layer="21"/>
+<wire x1="0" y1="1.2" x2="1.6" y2="1.2" width="0.1" layer="21"/>
+<wire x1="1.6" y1="1.2" x2="1.6" y2="0" width="0.1" layer="21"/>
+<wire x1="1.6" y1="0" x2="0" y2="0" width="0.1" layer="21"/>
+<smd name="1" x="0.2" y="0.1" dx="0.26" dy="0.55" layer="1" rot="R180"/>
+<smd name="2" x="0.6" y="0.1" dx="0.26" dy="0.55" layer="1"/>
+<smd name="3" x="1" y="0.1" dx="0.26" dy="0.55" layer="1"/>
+<smd name="4" x="1.4" y="0.1" dx="0.26" dy="0.55" layer="1"/>
+<smd name="8" x="0.2" y="1.1025" dx="0.26" dy="0.55" layer="1" rot="R180"/>
+<smd name="7" x="0.6" y="1.1025" dx="0.26" dy="0.55" layer="1"/>
+<smd name="6" x="1" y="1.1025" dx="0.26" dy="0.55" layer="1"/>
+<smd name="5" x="1.4" y="1.1025" dx="0.26" dy="0.55" layer="1"/>
+<smd name="PAD" x="0.8" y="0.6" dx="0.3" dy="1.2" layer="1" rot="R90"/>
+<circle x="0.269615625" y="0.2769" radius="0.126359375" width="0.09" layer="20"/>
+</package>
+</packages>
+<symbols>
+<symbol name="NCP186-AMX330TAG">
+<wire x1="0" y1="0" x2="0" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="0" y1="-25.4" x2="17.78" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-25.4" x2="17.78" y2="0" width="0.254" layer="94"/>
+<wire x1="17.78" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="IN" x="-5.08" y="-2.54" length="middle"/>
+<pin name="OUT" x="22.86" y="-2.54" length="middle" rot="R180"/>
+<pin name="GND" x="-5.08" y="-22.86" length="middle"/>
+<pin name="EN" x="22.86" y="-7.62" length="middle" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="NCP186-AMX330TAG">
+<gates>
+<gate name="G$1" symbol="NCP186-AMX330TAG" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="XDFN8">
+<connects>
+<connect gate="G$1" pin="EN" pad="6"/>
+<connect gate="G$1" pin="GND" pad="5 PAD"/>
+<connect gate="G$1" pin="IN" pad="7 8" route="any"/>
+<connect gate="G$1" pin="OUT" pad="1 2 4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -8401,7 +8401,6 @@ Source: www.kingbright.com</description>
 </class>
 </classes>
 <parts>
-<part name="U$1" library="Ladvien_Eagle_Parts" deviceset="NCP186-AMX330TAG" device=""/>
 <part name="C1" library="resistor" deviceset="C-US" device="C0805K"/>
 <part name="C2" library="resistor" deviceset="C-US" device="C0805K"/>
 <part name="J1" library="SparkFun-Connectors" deviceset="CONN_03" device=""/>
@@ -8411,13 +8410,13 @@ Source: www.kingbright.com</description>
 <part name="LED1" library="led" deviceset="LED" device="CHIPLED_0603"/>
 <part name="R1" library="resistor" deviceset="R-US_" device="R0805W"/>
 <part name="GND3" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="U$1" library="Ladvien_Eagle_Parts" deviceset="NCP186-AMX330TAG" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="U$1" gate="G$1" x="0" y="25.4"/>
 <instance part="C1" gate="G$1" x="43.18" y="17.78"/>
 <instance part="C2" gate="G$1" x="-22.86" y="20.32"/>
 <instance part="J1" gate="J$1" x="-40.64" y="20.32"/>
@@ -8427,18 +8426,24 @@ Source: www.kingbright.com</description>
 <instance part="LED1" gate="G$1" x="73.66" y="38.1" rot="R90"/>
 <instance part="R1" gate="G$1" x="60.96" y="38.1"/>
 <instance part="GND3" gate="1" x="81.28" y="27.94"/>
+<instance part="U$1" gate="G$1" x="0" y="25.4"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="IIN" class="0">
 <segment>
-<pinref part="J1" gate="J$1" pin="3"/>
 <pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="-33.02" y1="22.86" x2="-22.86" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="22.86" x2="-20.32" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="IN"/>
-<wire x1="-22.86" y1="22.86" x2="-5.08" y2="22.86" width="0.1524" layer="91"/>
-<junction x="-22.86" y="22.86"/>
+<wire x1="-20.32" y1="22.86" x2="-5.08" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="22.86" x2="-20.32" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="22.86" x2="-20.32" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="33.02" x2="50.8" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="33.02" x2="50.8" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="J2" gate="J$1" pin="3"/>
+<wire x1="50.8" y1="17.78" x2="53.34" y2="17.78" width="0.1524" layer="91"/>
+<junction x="-20.32" y="22.86"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -8446,7 +8451,6 @@ Source: www.kingbright.com</description>
 <pinref part="J1" gate="J$1" pin="2"/>
 <wire x1="-33.02" y1="20.32" x2="-30.48" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="-30.48" y1="20.32" x2="-30.48" y2="2.54" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="GND"/>
 <wire x1="-30.48" y1="2.54" x2="-22.86" y2="2.54" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="2"/>
 <wire x1="-22.86" y1="2.54" x2="-5.08" y2="2.54" width="0.1524" layer="91"/>
@@ -8454,6 +8458,7 @@ Source: www.kingbright.com</description>
 <junction x="-22.86" y="2.54"/>
 <pinref part="GND1" gate="1" pin="GND"/>
 <wire x1="-22.86" y1="2.54" x2="-22.86" y2="-2.54" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>
@@ -8468,7 +8473,6 @@ Source: www.kingbright.com</description>
 </net>
 <net name="OUT" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="OUT"/>
 <wire x1="22.86" y1="22.86" x2="43.18" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="22.86" x2="48.26" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="J2" gate="J$1" pin="1"/>
@@ -8479,17 +8483,19 @@ Source: www.kingbright.com</description>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="48.26" y1="38.1" x2="55.88" y2="38.1" width="0.1524" layer="91"/>
 <junction x="48.26" y="22.86"/>
+<junction x="43.18" y="22.86"/>
+<pinref part="U$1" gate="G$1" pin="OUT"/>
 </segment>
 </net>
 <net name="EN" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="EN"/>
 <wire x1="22.86" y1="17.78" x2="30.48" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="17.78" x2="30.48" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="5.08" x2="50.8" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="5.08" x2="50.8" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="J2" gate="J$1" pin="3"/>
-<wire x1="50.8" y1="17.78" x2="53.34" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="EN"/>
+<wire x1="30.48" y1="17.78" x2="30.48" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="-12.7" x2="-27.94" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="-27.94" y1="-12.7" x2="-27.94" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="J1" gate="J$1" pin="3"/>
+<wire x1="-27.94" y1="22.86" x2="-33.02" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
