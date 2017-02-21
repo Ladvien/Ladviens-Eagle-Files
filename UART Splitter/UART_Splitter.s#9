@@ -5767,9 +5767,9 @@ Source: AVX .. aphvc.pdf</description>
 <part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="Q1" library="crystal" deviceset="CRYSTAL" device="HC49UP"/>
-<part name="C1" library="resistor" deviceset="C-US" device="C0805K"/>
-<part name="C2" library="resistor" deviceset="C-US" device="C0805K"/>
+<part name="Q1" library="crystal" deviceset="CRYSTAL" device="HC49UP" value="12mhz"/>
+<part name="C1" library="resistor" deviceset="C-US" device="C0805K" value="22pf"/>
+<part name="C2" library="resistor" deviceset="C-US" device="C0805K" value="22pf"/>
 <part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
