@@ -9759,22 +9759,22 @@ SMT- SWCH-08247</description>
 <part name="GND7" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="R2" library="resistor" deviceset="R-US_" device="R0402" value="10k"/>
 <part name="R3" library="resistor" deviceset="R-US_" device="R0402" value="10k"/>
-<part name="R4" library="resistor" deviceset="R-US_" device="R0402"/>
-<part name="R5" library="resistor" deviceset="R-US_" device="R0402"/>
-<part name="R6" library="resistor" deviceset="R-US_" device="R0402"/>
-<part name="R7" library="resistor" deviceset="R-US_" device="R0402"/>
-<part name="R8" library="resistor" deviceset="R-US_" device="R0402"/>
-<part name="R9" library="resistor" deviceset="R-US_" device="R0402"/>
-<part name="R10" library="resistor" deviceset="R-US_" device="R0402"/>
-<part name="R11" library="resistor" deviceset="R-US_" device="R0402"/>
-<part name="LED1" library="led" deviceset="LED" device="SML0603"/>
-<part name="LED2" library="led" deviceset="LED" device="SML0603"/>
-<part name="LED3" library="led" deviceset="LED" device="SML0603"/>
-<part name="LED4" library="led" deviceset="LED" device="SML0603"/>
-<part name="LED5" library="led" deviceset="LED" device="SML0603"/>
-<part name="LED6" library="led" deviceset="LED" device="SML0603"/>
-<part name="LED7" library="led" deviceset="LED" device="SML0603"/>
-<part name="LED8" library="led" deviceset="LED" device="SML0603"/>
+<part name="R4" library="resistor" deviceset="R-US_" device="R0402" value="330"/>
+<part name="R5" library="resistor" deviceset="R-US_" device="R0402" value="330"/>
+<part name="R6" library="resistor" deviceset="R-US_" device="R0402" value="330"/>
+<part name="R7" library="resistor" deviceset="R-US_" device="R0402" value="330"/>
+<part name="R8" library="resistor" deviceset="R-US_" device="R0402" value="330"/>
+<part name="R9" library="resistor" deviceset="R-US_" device="R0402" value="330"/>
+<part name="R10" library="resistor" deviceset="R-US_" device="R0402" value="330"/>
+<part name="R11" library="resistor" deviceset="R-US_" device="R0402" value="330"/>
+<part name="LED1" library="led" deviceset="LED" device="SML0603" value="GREEN"/>
+<part name="LED2" library="led" deviceset="LED" device="SML0603" value="BLUE"/>
+<part name="LED3" library="led" deviceset="LED" device="SML0603" value="GREEN"/>
+<part name="LED4" library="led" deviceset="LED" device="SML0603" value="BLUE"/>
+<part name="LED5" library="led" deviceset="LED" device="SML0603" value="GREEN"/>
+<part name="LED6" library="led" deviceset="LED" device="SML0603" value="BLUE"/>
+<part name="LED7" library="led" deviceset="LED" device="SML0603" value="GREEN"/>
+<part name="LED8" library="led" deviceset="LED" device="SML0603" value="BLUE"/>
 <part name="S1" library="SparkFun-Electromechanical" deviceset="TAC_SWITCH" device="SMD"/>
 <part name="R1" library="resistor" deviceset="R-US_" device="R0402" value="10k"/>
 <part name="GND8" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -9846,6 +9846,8 @@ SMT- SWCH-08247</description>
 <wire x1="-38.1" y1="119.38" x2="-33.02" y2="119.38" width="0.1524" layer="91"/>
 <junction x="-33.02" y="119.38"/>
 <pinref part="GND1" gate="1" pin="GND"/>
+<junction x="-30.48" y="139.7"/>
+<junction x="-33.02" y="139.7"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="GND"/>
@@ -9913,6 +9915,8 @@ SMT- SWCH-08247</description>
 <wire x1="114.3" y1="111.76" x2="114.3" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="109.22" x2="114.3" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="GND8" gate="1" pin="GND"/>
+<junction x="114.3" y="109.22"/>
+<junction x="114.3" y="111.76"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="GND"/>
@@ -10163,6 +10167,8 @@ SMT- SWCH-08247</description>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="71.12" y1="111.76" x2="71.12" y2="109.22" width="0.1524" layer="91"/>
 <junction x="71.12" y="109.22"/>
+<junction x="104.14" y="109.22"/>
+<junction x="104.14" y="111.76"/>
 </segment>
 </net>
 <net name="N$8" class="0">
