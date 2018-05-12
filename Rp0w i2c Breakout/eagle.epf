@@ -1,0 +1,16 @@
+[Eagle]
+Version="09 00 00"
+Platform="Mac OS X"
+Globals="Globals"
+Desktop="Desktop"
+
+[Globals]
+AutoSaveProject=1
+
+[Win_1]
+Type="Control Panel"
+Number=0
+
+[Desktop]
+Screen="2048 1152"
+Window="Win_1"
